@@ -1,0 +1,121 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 5.5rem;
+}
+
+.about__img {
+    width: 400px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about1 {
+    background-image: url("../../assets/backgrounds/about1.jpg");
+    background-size: 150%;
+}
+
+.about2 {
+    background-image: url("../../assets/backgrounds/about2.png");
+    background-size: 150%;
+}
+
+.about3 {
+    background-image: url("../../assets/backgrounds/about3.png");
+    background-size: 150%;
+}
+
+.about__info {
+    grid-template-columns: repeat(3, 140px);
+    gap: 1.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about__box {
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    color: black;
+}
+
+.about__icon {
+    font-size: 2rem;
+    margin-bottom: var(--mb-0-5);
+}
+
+.about__title {
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    color: black;
+}
+
+.about__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.about__description {
+    margin-bottom: var(--mb-2);
+    padding: 0 2rem 1rem 0;
+}
+
+
+.button__about {
+    color: black;
+    background-color: #F9D5C5;
+}
+
+.button__about:hover {
+    background-color: white;
+}
+
+
+@media screen and (max-width:992px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    
+    .about__img {
+        width: 220px;
+    }
+
+    .about__box {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+
+    .about__description {
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .about__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__description {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    :root {
+        --big-font-size: 2.25rem;
+    }
+
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
